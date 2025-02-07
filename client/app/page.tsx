@@ -5,7 +5,7 @@ import { HeroUIProvider } from "@heroui/react";
 import { Messages, Inputs, SignUp } from "@/components";
 
 const socket = io(
-  "https://congenial-zebra-69r46pjwvr6vf6pw-8000.app.github.dev/"
+  "https://super-duper-space-fishstick-6xr44p9gqw9frrp7-8000.app.github.dev/"
 );
 
 console.log(socket);
