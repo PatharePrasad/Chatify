@@ -10,8 +10,8 @@ const jost = Jost({
 export const metadata: Metadata = {
   title: "Chatify",
   description: "Anonymised chat. Make healthy conversations.",
-  authors: { url: "https://shantanuuchak.tech", name: "Shantanu Chakrawarty" },
-  keywords: ["Chat Room", "MADE App", "Anonymised chat"],
+  authors: { url: "https://github.com/PatharePrasad", name: "Prasad Pathare" },
+  keywords: ["Chat Room", "Chatify App", "Anonymised chat"],
 };
 
 export default function RootLayout({
