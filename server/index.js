@@ -10,10 +10,18 @@ app.get("/", (req, res) => {
 });
 
 // MARK: Socket.io
-const io = new Server(server);
+const io = new Server(server, {
+  cors: {
+    origin: "*",
+  },
+});
 
 io.on("connection", (socket) => {
   console.log(`Someone connected with ${socket.id} id.`);
+
+  socket.on("image", (data) => {
+    socket.broadcast.emit("image", data);
+  });
 });
 
 server.listen(8000, () => {
