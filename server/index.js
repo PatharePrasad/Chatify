@@ -9,6 +9,7 @@ app.get("/", (req, res) => {
   res.send("Server is healthy!");
 });
 
+// MARK: Socket.io
 const io = new Server(server);
 
 io.on("connection", (socket) => {
@@ -16,5 +17,5 @@ io.on("connection", (socket) => {
 });
 
 server.listen(8000, () => {
-  console.log("Server listening on PORT 8000");
+  console.log("Server listening on PORT: 8000");
 });
