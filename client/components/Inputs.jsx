@@ -41,7 +41,7 @@ export default function Inputs({ socket, name, setMessages }) {
     }
 
     const msg = {
-      type: "text",
+      type: input.startsWith("https") ? "link" : "text",
       content: input,
       user: {
         id: socket.id,
