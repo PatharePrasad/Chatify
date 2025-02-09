@@ -1,10 +1,18 @@
 import { Card, CardBody, Avatar, Image } from "@heroui/react";
+import NewUser from "./NewUser";
 
 export default function Chat({ content, own, type, name }) {
   return (
-    <Card className={`w-fit bg-transparent ${own && "ml-auto bg-blue-200"}`}>
+    <Card
+      className={`w-fit bg-transparent ${own && "ml-auto bg-blue-200"} ${
+        type === "user" && "mx-auto bg-green-50"
+      }`}
+    >
       <CardBody className="flex flex-row gap-2 items-center">
-        {!own && <Avatar name={name} />}
+        {!own && type !== "user" && <Avatar name={name} />}
+
+        {/* New User */}
+        {type === "user" && <NewUser name={content} />}
 
         {/* Text Message */}
         {type === "text" && <p>{content}</p>}

@@ -38,6 +38,7 @@ export default function Inputs({ socket, name, setMessages }) {
 
     if (!input) {
       imageEl.current.click();
+      return;
     }
 
     const msg = {
