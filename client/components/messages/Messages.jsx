@@ -2,7 +2,7 @@ import Chat from "./Chat";
 
 export default function Messages({ messages, id }) {
   return (
-    <div>
+    <div className="container mx-auto pt-5 px-3 flex flex-col gap-1">
       {messages.map((message, index) => (
         <Chat
           key={index}
