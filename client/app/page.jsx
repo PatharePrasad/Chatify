@@ -10,6 +10,12 @@ export default function Home() {
   const [user, setUser] = useState(null);
   const [messages, setMessages] = useState([]);
 
+  useEffect(() => {
+    socket.on("new_message", (msg) => {
+      setMessages((prevState) => [...prevState, msg]);
+    });
+  }, []);
+
   return (
     <HeroUIProvider>
       <div className="min-h-screen max-h-screen">
