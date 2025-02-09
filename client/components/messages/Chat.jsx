@@ -1,3 +1,3 @@
-export default function Chat() {
-    return <div>Chat</div>;
-  }
+export default function Chat({ content, own, type }) {
+  return <div>Chat</div>;
+}
