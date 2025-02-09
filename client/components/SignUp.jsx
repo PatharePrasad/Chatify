@@ -47,8 +47,8 @@ export default function SignUp({ setUser, socket }) {
             width={40}
           />
           <div className="flex flex-col">
-            <p className="text-md">MADE Room</p>
-            <p className="text-small text-default-500">made.phleebs.tech</p>
+            <p className="text-md">Chatify</p>
+            <p className="text-small text-default-500">chatify-ebon.vercel.app</p>
           </div>
         </CardHeader>
 
