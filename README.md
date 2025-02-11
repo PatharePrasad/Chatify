@@ -1,5 +1,3 @@
-# Chatify
-
 # **Chatify - Seamless Real-Time Messaging 🚀**  
 
 A real-time chat application built with **React, Tailwind CSS, and Socket.io**, featuring a sleek UI and instant messaging for seamless conversations.  
